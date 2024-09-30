@@ -28,7 +28,7 @@ void TrafficLight::_bind_methods() {
 
 	ADD_SIGNAL(MethodInfo("light_changed", PropertyInfo(Variant::INT, "next_light")));
 
-	GDVIRTUAL_BIND(_get_next_light);
+	GDVIRTUAL_BIND(_get_next_light, "previous_light");
 }
 
 void TrafficLight::_notification(int p_what) {
